@@ -5,12 +5,13 @@ on:
     branches-ignore:
       - 'main'
       - 'dev'
+
 jobs:
   unit_testing:
     runs-on: self-hosted
     steps:
       - name: Checkout Repository
-      uses: actions/checkout@v4
+        uses: actions/checkout@v4
 
       - name: Run Unit Tests
         shell: bash
